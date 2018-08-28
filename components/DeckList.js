@@ -8,8 +8,6 @@ class DeckList extends React.Component {
 
   render() {
     const { decks } = this.props
-    // console.log(this.props.navigation);
-    // console.log("decks", decks)
     return (
       <View style={styles.container}>
       {decks !== null ?

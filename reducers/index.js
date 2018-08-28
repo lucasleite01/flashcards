@@ -5,8 +5,6 @@ import {
 } from '../actions'
 
 function decks(state, action) {
-  console.log(action);
-  console.log(state);
   switch (action.type) {
     case ADD_DECK:
       return {

@@ -13,16 +13,12 @@ class Deck extends React.Component {
   }
 
   static navigationOptions = ({navigation}) => {
-    // console.log("navigation", navigation.state.params.title);
     return {title: navigation.state.params.title}
   }
 
   render() {
-    // console.log(this.props);
-    // console.log(this.props.navigation.state.params.title);
     const { opacity } = this.state
     const { navigation } = this.props
-    // console.log("navigation", navigation);
     return (
       <Animated.View style={styles.container, {opacity}}>
         <View style={{paddingTop: 30}}>

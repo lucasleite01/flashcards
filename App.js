@@ -83,8 +83,7 @@ class App extends React.Component {
   }
   render() {
     const store = createStore(reducer, setDecks(), composeWithDevTools(applyMiddleware(thunk)))
-    // const store = createStore(reducer, compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
-    console.log("store", store.getState());
+    
     return (
       <Provider store={store}>
         <View style={{flex: 1}}>

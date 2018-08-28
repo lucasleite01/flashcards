@@ -14,7 +14,6 @@ class NewDeck extends React.Component {
   }
 
   render() {
-    console.log("newdeck", this.props);
     return (
       <View style={styles.container}>
         <Text style={{fontWeight: 'bold', fontSize: 20}}>What is the name of your new deck?</Text>

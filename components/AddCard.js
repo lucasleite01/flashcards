@@ -19,9 +19,6 @@ class AddCard extends React.Component {
   }
 
   render() {
-    // const { decks } = this.props
-    console.log("AddCard props", this.props);
-    // console.log("decks", decks)
     return (
       <View style={styles.container}>
         <Text style={{fontWeight: 'bold', fontSize: 20}}>Question</Text>
@@ -56,14 +53,6 @@ class AddCard extends React.Component {
     );
   }
 }
-
-// function mapDispatchToProps(dispatch, props) {
-//   // console.log("mapDispatchToProps", props);
-//   return {
-//     addCard: (card) => dispatch(AddCard(card)),
-//   }
-// }
-
 
 const styles = StyleSheet.create({
   container: {

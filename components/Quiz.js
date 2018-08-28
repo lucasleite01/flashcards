@@ -23,11 +23,8 @@ class Quiz extends React.Component {
   }
 
   render() {
-    // console.log("state", this.state);
-    // console.log(this.props.navigation.state.params.title);
     const { navigation } = this.props
     const { showAnswer, showHits, cardNumber, totalQuestions, hits, percentage } = this.state
-    console.log("navigationfafafa", navigation.state.params);
     return (
       <View style={styles.container}>
         {!showAnswer && !showHits ?
