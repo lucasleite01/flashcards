@@ -39,7 +39,7 @@ class Deck extends React.Component {
             style={styles.button}
             onPress={() => {
               clearLocalNotification()
-                .then(setLocalNotification)
+              setLocalNotification()
               if (navigation.state.params.questions.length !== 0)
                 this.props.navigation.navigate('Quiz', navigation.state.params.questions);
             }}>

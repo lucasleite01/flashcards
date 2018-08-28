@@ -83,7 +83,7 @@ class App extends React.Component {
   }
   render() {
     const store = createStore(reducer, setDecks(), composeWithDevTools(applyMiddleware(thunk)))
-    
+    console.log(store);
     return (
       <Provider store={store}>
         <View style={{flex: 1}}>
